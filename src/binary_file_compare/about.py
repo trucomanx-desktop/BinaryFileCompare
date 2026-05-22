@@ -1,6 +1,6 @@
 # about.py
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __package__ = "binary_file_compare"
 __program_name__ = "binary-file-compare"
 __author__ = "Fernando Pujaico Rivera"

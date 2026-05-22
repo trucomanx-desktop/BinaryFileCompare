@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binary_file_compare"
+version = "0.1.1"
+description = "Binary file compare"
+readme = "README.md"
+authors = [{name = "Fernando Pujaico Rivera", email = "fernando.pujaico.rivera@gmail.com"}]
+maintainers = [{name = "Fernando Pujaico Rivera", email = "fernando.pujaico.rivera@gmail.com"}]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-only WITH Classpath-Exception-2.0 OR BSD-3-Clause"
+license-files = ["LICENSE"]
+keywords = ["writing", "translate"]
+dependencies = [
+    "PyQt5"
+]
+
+[project.urls]
+"Bug Reports" = "https://github.com/trucomanx-desktop/BinaryFileCompare/issues"
+"Funding" = "https://trucomanx.github.io/en/funding.html"
+"Documentation" = "https://github.com/trucomanx-desktop/BinaryFileCompare/tree/main/doc"
+"Source" = "https://github.com/trucomanx-desktop/BinaryFileCompare"
+
+[project.scripts]
+"binary-file-compare" = "binary_file_compare.program:main"
+
+[tool.setuptools]
+packages = ["binary_file_compare", "binary_file_compare.modules"]
+
+[tool.setuptools.package-data]
+"binary_file_compare" = ["icons/*.png","icons/*.svg"]

@@ -63,6 +63,7 @@ class CompareWorker(QThread):
         self.file1 = file1
         self.file2 = file2
 
+
     def run(self):
         try:
             with open(self.file1, "rb") as f1, open(self.file2, "rb") as f2:
@@ -108,6 +109,9 @@ class MainWindow(QMainWindow):
     def __init__(self, file1=None, file2=None):
         super().__init__()
 
+        print("file1:", file1)
+        print("file2:", file2)
+        
         self.setWindowTitle(about.__program_name__)
         self.resize(CONFIG["window_width"], CONFIG["window_height"])
         
@@ -119,10 +123,13 @@ class MainWindow(QMainWindow):
         self._create_toolbar()
         self.init_ui()
 
-        if file1 and file2:
+        if   file1 and file2:
             self.file1_input.setText(file1)
             self.file2_input.setText(file2)
             self.start_comparison()
+        elif file1 or file2:
+            self.file1_input.setText(file1)
+            self.file2_input.setText(file2)
 
     def init_ui(self):
         
@@ -304,7 +311,6 @@ class MainWindow(QMainWindow):
 def main():
     signal.signal(signal.SIGINT, signal.SIG_DFL)
        
-    '''
     extras="" # "MimeType=text/vnd.graphviz;"
     
     create_desktop_directory()    
@@ -330,7 +336,7 @@ def main():
                                 program_name=about.__program_name__,
                                 extras=extras)
             return
-    '''
+
     
     args = sys.argv[1:]
 
@@ -339,7 +345,7 @@ def main():
     file2 = args[1] if len(args) > 1 else ""
 
     app = QApplication(sys.argv)
-    app.setApplicationName(about.__package__)
+    app.setApplicationName(about.__program_name__)
     
     window = MainWindow(file1, file2)
     window.show()

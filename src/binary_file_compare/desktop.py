@@ -31,7 +31,7 @@ def create_desktop_file(desktop_path, overwrite=False, program_name=None, extras
     desktop_entry = f"""[Desktop Entry]
 Name={__program_name}
 Comment={about.__description__}
-Exec={script_path} %f
+Exec={script_path} %F
 Terminal=false
 Type=Application
 Icon={icon_path}
