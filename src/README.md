@@ -22,6 +22,10 @@ To start, use the command below:
 ```bash
 binary-file-compare
 ```
+or
+```bash
+binary-file-compare filepath1 filepath2
+```
 ## 2. More information
 
 If you want more information go to [doc](https://github.com/trucomanx-desktop/BinaryFileCompare/blob/main/doc) directory.
