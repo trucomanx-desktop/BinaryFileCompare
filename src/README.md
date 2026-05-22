@@ -2,7 +2,7 @@
 
 Binary file compare
 
-![logo](https://raw.githubusercontent.com/trucomanx/BinaryFileCompare/main/screenshot.png)
+![logo](https://raw.githubusercontent.com/trucomanx-desktop/BinaryFileCompare/main/screenshot.png)
 
 ## 1. Installing
 
