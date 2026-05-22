@@ -119,6 +119,8 @@ class MainWindow(QMainWindow):
         # Get base directory for icons
         self.icon_path = resource_path("icons", "logo.svg")
         self.setWindowIcon(QIcon(self.icon_path)) 
+        
+        self.last_dir = os.path.expanduser("~")
 
         self._create_toolbar()
         self.init_ui()
@@ -179,18 +181,30 @@ class MainWindow(QMainWindow):
         central = QWidget()
         central.setLayout(layout)
         self.setCentralWidget(central)
-        
 
 
     def select_file1(self):
-        path, _ = QFileDialog.getOpenFileName(self, "Select file 1")
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Select file 1",
+            self.last_dir
+        )
+
         if path:
             self.file1_input.setText(path)
+            self.last_dir = os.path.dirname(path)
+
 
     def select_file2(self):
-        path, _ = QFileDialog.getOpenFileName(self, "Select file 2")
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Select file 2",
+            self.last_dir
+        )
+
         if path:
             self.file2_input.setText(path)
+            self.last_dir = os.path.dirname(path)
 
     def start_comparison(self):
         file1 = self.file1_input.text()
