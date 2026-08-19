@@ -54,6 +54,39 @@ CONFIG=configure.load_config(CONFIG_PATH)
 CHUNK_SIZE = 1024 * 1024  # 1MB
 
 
+class FileDropLineEdit(QLineEdit):
+    fileDropped = pyqtSignal(str)
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+        self.setAcceptDrops(True)
+
+    def dragEnterEvent(self, event):
+        if event.mimeData().hasUrls():
+            urls = event.mimeData().urls()
+
+            if urls and urls[0].isLocalFile():
+                event.acceptProposedAction()
+                return
+
+        event.ignore()
+
+    def dropEvent(self, event):
+        urls = event.mimeData().urls()
+
+        if urls:
+            file_path = urls[0].toLocalFile()
+
+            if os.path.isfile(file_path):
+                self.setText(file_path)
+                self.fileDropped.emit(file_path)
+                event.acceptProposedAction()
+                return
+
+        event.ignore()
+
+
 class CompareWorker(QThread):
     progress = pyqtSignal(int)
     finished = pyqtSignal(bool, str)
@@ -139,7 +172,7 @@ class MainWindow(QMainWindow):
 
         # FILE 1
         file1_layout = QHBoxLayout()
-        self.file1_input = QLineEdit()
+        self.file1_input = FileDropLineEdit()
         btn1 = QPushButton("Select")
         btn1.setIcon(QIcon(resource_path("icons", "open_file.svg")))
         btn1.clicked.connect(self.select_file1)
@@ -149,7 +182,7 @@ class MainWindow(QMainWindow):
 
         # FILE 2
         file2_layout = QHBoxLayout()
-        self.file2_input = QLineEdit()
+        self.file2_input = FileDropLineEdit()
         btn2 = QPushButton("Select")
         btn2.setIcon(QIcon(resource_path("icons", "open_file.svg")))
         btn2.clicked.connect(self.select_file2)
