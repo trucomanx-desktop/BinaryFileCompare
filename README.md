@@ -8,12 +8,25 @@ Binary file compare
 
 To install the package from [PyPI](https://pypi.org/project/binary_file_compare/), follow the instructions below:
 
+### With pip
 
 ```bash
 pip install --upgrade binary_file_compare
 ```
 
 Execute `which binary-file-compare` to see where it was installed, probably in `/home/USERNAME/.local/bin/binary-file-compare`.
+
+### With pipx (recommended for desktop applications)
+
+```bash
+py -m pip install --user pipx
+py -m pipx ensurepath
+pipx install binary_file_compare
+```
+
+If you need to upgrade later: `pipx upgrade binary_file_compare`
+
+
 
 ### Using
 
