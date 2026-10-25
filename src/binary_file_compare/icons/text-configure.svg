@@ -541,7 +541,7 @@
          id="stop35-paper-sheet-orig-7" /></linearGradient><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath0-paper-sheet-orig-3"><path
-         style="fill:url(#linearGradient6013) #000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
          d="m 36,19 c -0.562656,0 -1,0.437344 -1,1 v 217 c 0,0.56266 0.437344,1 1,1 h 184 c 0.56266,0 1,-0.43734 1,-1 V 66 C 221,52.442308 210.14182,40.704328 204.71875,35.28125 199.29568,29.858173 187.5577,19 174,19 Z"
          id="path0-paper-sheet-orig-9"
          inkscape:connector-curvature="0" /></clipPath><filter

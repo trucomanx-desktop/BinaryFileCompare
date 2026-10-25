@@ -29,6 +29,7 @@ dependencies = [
 
 [project.scripts]
 "binary-file-compare" = "binary_file_compare.program:main"
+"binary-directory-compare" = "binary_file_compare.program_dir:main"
 
 [tool.setuptools]
 packages = ["binary_file_compare", "binary_file_compare.modules"]

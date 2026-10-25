@@ -3,6 +3,7 @@
 __version__ = "0.1.3"
 __package__ = "binary_file_compare"
 __program_name__ = "binary-file-compare"
+__program_dir__ = "binary-directory-compare"
 __author__ = "Fernando Pujaico Rivera"
 __email__  = "fernando.pujaico.rivera@gmail.com"
 __description__ = "Binary file compare"

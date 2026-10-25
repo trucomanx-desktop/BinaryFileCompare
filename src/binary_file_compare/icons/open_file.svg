@@ -750,7 +750,7 @@
       <path
          sodipodi:nodetypes="cccccccccsscc"
          id="path12"
-         style="display:inline;opacity:0.04;fill:url(#pattern2719);fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
+         style="display:inline;opacity:0.04;fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
          d="M 52.094352,312 C 49.758741,312 48,313.27843 48,315.94967 V 483.41529 C 48,487.36726 50.446761,490 53.771787,490 H 243.327 c 3.34438,0 4.673,-2.46074 4.673,-5.90535 V 336.57288 c 0,-2.95096 -2.01067,-4.54661 -4.51602,-4.54661 h -93.98741 c -1.69284,0 -4.43377,-0.2055 -6.49302,-2.5614 l -13.0712,-14.95423 c -1.75748,-2.01066 -4.22518,-2.51056 -6.08975,-2.51056 z" />
       <path
          transform="matrix(1,0,0,0.5238092,0,256.28583)"
@@ -914,7 +914,7 @@
          d="m 920.34375,-131 c -3.4345,0 -6.35859,0.7694 -8.09375,1.84375 l -8.1875,4.0625 c -2.05291,1.27107 -5.7109,2.1553 -10.1875,2.15625 l -60.125,0.0313 c -3.43318,0 -5.88785,1.34906 -5.71875,2.25 l 0.34375,1.28125 c 0.77997,-0.76314 2.80011,-1.53125 5.375,-1.53125 l 60.125,-0.0313 c 4.4766,-9.5e-4 8.13459,-0.88518 10.1875,-2.15625 l 8.1875,-4.0625 C 913.98516,-128.2306 916.90925,-129 920.34375,-129 H 1066.25 c 2.6077,0 4.6524,0.52923 5.4062,1.375 l 0.3126,-1.125 c 0.1926,-1.35562 -2.2856,-2.25 -5.7188,-2.25 z"
          style="display:inline;overflow:visible;visibility:visible;fill:url(#radialGradient9);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:new" />
       <path
-         style="display:inline;overflow:visible;visibility:visible;opacity:0.04;fill:url(#pattern15947);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:new"
+         style="display:inline;overflow:visible;visibility:visible;opacity:0.04;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:new"
          d="m 841.04688,-72.57432 c 1.27784,4.81831 1.95823,8.79481 7.29687,8.57934 h 197.25005 c 6.2214,0 8.6834,-3.47585 10.3906,-9.4845 l 15.9844,-56.25759 C 1072.1614,-131.0927 1069.6832,-132 1066.25,-132 H 920.34375 c -3.4345,0 -6.35859,0.77532 -8.09375,1.84967 l -8.1875,4.07099 c -2.05291,1.27107 -5.7109,2.14386 -10.1875,2.14481 l -60.125,0.0196 c -3.43318,0 -5.88785,1.36199 -5.71875,2.26293 l 13.01563,49.07764 z"
          id="path5"
          sodipodi:nodetypes="cccsccccccccs" />

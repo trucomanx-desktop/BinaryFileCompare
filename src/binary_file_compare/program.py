@@ -26,7 +26,7 @@ from binary_file_compare.desktop import create_desktop_file, create_desktop_dire
 CONFIG_PATH = os.path.join( os.path.expanduser("~"),
                             ".config", 
                             about.__package__, 
-                            "config.json" )
+                            "config_file.json" )
 
 DEFAULT_CONTENT={   
     "toolbar_configure": "Configure",
