@@ -19,8 +19,8 @@ Execute `which binary-file-compare` to see where it was installed, probably in `
 ### With pipx (recommended for desktop applications)
 
 ```bash
-py -m pip install --user pipx
-py -m pipx ensurepath
+#python3 -m pip install --user pipx
+#python3 -m pipx ensurepath
 pipx install binary_file_compare
 ```
 
@@ -34,10 +34,12 @@ To start, use the command below:
 
 ```bash
 binary-file-compare
+binary-directory-compare
 ```
 or
 ```bash
 binary-file-compare filepath1 filepath2
+binary-directory-compare dirpath1 dirpath2
 ```
 ## 2. More information
 

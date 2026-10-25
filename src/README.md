@@ -21,10 +21,12 @@ To start, use the command below:
 
 ```bash
 binary-file-compare
+binary-directory-compare
 ```
 or
 ```bash
 binary-file-compare filepath1 filepath2
+binary-directory-compare dirpath1 dirpath2
 ```
 ## 2. More information
 
