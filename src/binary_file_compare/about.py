@@ -1,6 +1,6 @@
 # about.py
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __package__ = "binary_file_compare"
 __program_name__ = "binary-file-compare"
 __program_dir__ = "binary-directory-compare"
